@@ -4,12 +4,11 @@ import com.vonage.client.VonageClient;
 
 public class App{
     public static void main(String[] args) {
-
-		    String TO_NUMBER = System.getenv("TO_NUMBER");
+        String TO_NUMBER = System.getenv("TO_NUMBER");
 
         VonageClient client = VonageClient.builder()
-				  .applicationId(System.getenv("VONAGE_APPLICATION_ID"))
-				  .privateKeyPath(System.getenv("VONAGE_PRIVATE_KEY_PATH"))
+          .applicationId(System.getenv("VONAGE_APPLICATION_ID"))
+          .privateKeyPath(System.getenv("VONAGE_PRIVATE_KEY_PATH"))
           .build();
 
         /*
